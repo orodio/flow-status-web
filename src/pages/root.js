@@ -59,7 +59,7 @@ const Chain = ({chain}) => {
     <Boxes>
       <Label>{chain}:</Label>
       {history.map((d, i) => (
-        <Box id={i} success={d.success} />
+        <Box id={i} success={d.success} title={new Date(d.at)} />
       ))}
     </Boxes>
   )
